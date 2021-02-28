@@ -440,6 +440,32 @@ class Designer extends Component {
     });
   }
 
+  handleDuplicate() {
+    let {selectedObjectIndex} = this.state;
+    let {objects} = this.props;
+
+    let sourceObject = objects.filter(
+      (object, index) =>
+        selectedObjectIndex === index
+    )[0];
+    let {meta} = this.getObjectComponent(sourceObject.type);
+
+    let newObject = {...sourceObject};
+    newObject.uuid = this.generateUUID();
+    newObject.x += 5;
+    newObject.y += 5;
+
+    this.setState({
+      currentObjectIndex: null,
+      selectedObjectIndex: null,
+      showHandler: false,
+      handler: null
+    }, () => {
+      this.objectRefs = {};
+      this.props.onUpdate([...objects, newObject]);
+    });
+  }
+
   removeCurrent() {
     let {selectedObjectIndex} = this.state;
     let {objects} = this.props;
@@ -576,6 +602,7 @@ class Designer extends Component {
               object={objectWithInitial}
               onArrange={this.handleArrange.bind(this)}
               onChange={this.handleObjectChange.bind(this)}
+              onDuplicate={this.handleDuplicate.bind(this)}
               objectComponent={objectComponent} />
           )}
         </div>
