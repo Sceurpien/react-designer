@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sceurpien/react-designer"
+    "url": "https://github.com/Sceurpien/react-designer-transcend"
   },
   "keywords": [
     "react",
@@ -22,7 +22,7 @@
   ],
   "author": "Transcend Water",
   "license": "MIT",
-  "homepage": "https://github.com/Sceurpien/react-designer",
+  "homepage": "https://github.com/Sceurpien/react-designer-transcend",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
