@@ -33,6 +33,12 @@ export default class SizePanel extends Component {
         {_.has(object, 'rotate') && <Columns label="Rotation">
           <Column label="angle" value={object.rotate}
                   onChange={this.props.onChange.bind(this, 'rotate')} />
+          <Column>
+            <Button onClick={this.props.onDuplicate.bind(this)}>
+              <Icon icon="duplicate" />
+              <span>Duplicate</span>
+            </Button>
+          </Column>
         </Columns>}
       </PropertyGroup>
     );

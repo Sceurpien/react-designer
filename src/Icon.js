@@ -89,6 +89,13 @@ export default class Icon extends Component {
            7.22l2.36.78c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88l-3.62
            3.62h9v-9l-3.6 3.6z"></path></g>
         );
+      case 'duplicate':
+        return (
+          <g>
+            <rect x={5} y={1} width={12} height={16} fill="white" strokeWidth={1} stroke="black" />
+            <rect x={1} y={5} width={12} height={16} fill="white" stroke="black" strokeWidth={1} />
+          </g>
+        )
       case 'send-to-back':
         return (
           <g>
