@@ -1,7 +1,7 @@
 {
-  "name": "react-designer",
-  "version": "1.1.1",
-  "description": "Easy to configure, lightweight, editable vector graphics in your react components.",
+  "name": "react-designer-transcend",
+  "version": "1.2.0",
+  "description": "Easy to configure, lightweight, editable vector graphics in your react components - Extended by Transcend Water",
   "main": "./lib/index.js",
   "scripts": {
     "start": "node server.js",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fatiherikli/react-designer"
+    "url": "https://github.com/Sceurpien/react-designer"
   },
   "keywords": [
     "react",
     "reactjs"
   ],
-  "author": "Fatih Erikli <fatiherikli@gmail.com> (http://fatiherikli.com)",
+  "author": "Transcend Water",
   "license": "MIT",
-  "homepage": "https://github.com/react-designer/react-designer",
+  "homepage": "https://github.com/Sceurpien/react-designer",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
