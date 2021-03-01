@@ -9,11 +9,11 @@ import {SizePanel, TextPanel,
 
 export default class Vector extends Component {
   static panels = [
-    SizePanel,
-    TextPanel,
-    StylePanel,
-    ImagePanel,
-    ArrangePanel
+    SizePanel
+    // ,TextPanel
+    // ,StylePanel
+    // ,ImagePanel
+    // ,ArrangePanel
   ];
 
   getStyle() {

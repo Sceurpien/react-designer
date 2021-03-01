@@ -14,7 +14,6 @@ import Column from './Column';
 class PanelList extends Component {
   render() {
     let {object, objectComponent, id} = this.props;
-
     return (
       <div style={{...styles.propertyPanel}}>
         {objectComponent.panels.map((Panel, i) => <Panel key={i} id={id} {...this.props} />)}
