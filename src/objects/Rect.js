@@ -12,7 +12,7 @@ export default class Rect extends Vector {
       width: 5,
       height: 5,
       strokeWidth: 0,
-      fill: "rgba(193, 66, 66, 0.41)",
+      fill: "rgba(127, 127, 127, 0.50)",
       radius: 0,
       blendMode: "normal",
       rotate: 0,

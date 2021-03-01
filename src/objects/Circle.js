@@ -12,7 +12,7 @@ export default class Circle extends Vector {
       width: 5,
       height: 5,
       rotate: 0,
-      fill: "rgba(193, 66, 66, 0.41)",
+      fill: "rgba(127, 127, 127, 0.50)",
       strokeWidth: 0,
       blendMode: "normal",
       stroke: "black",
